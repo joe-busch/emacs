@@ -1,6 +1,6 @@
 (defun insert-beamer-frame ()
-  (interactive)
   "Creates a new frame in a LaTex beamer file"
+  (interactive)
   (insert "\\begin{frame}\n\\frametitle{}\n\n\\end{frame}")
   (previous-line 2)
   (forward-char))
