@@ -1,6 +1,7 @@
 (defun insert-beamer-frame ()
   "Creates a new frame in a LaTex beamer file"
   (interactive)
+  (beginning-of-line)
   (insert "\\begin{frame}\n\\frametitle{}\n\n\\end{frame}")
   (previous-line 2)
   (forward-char))
@@ -34,3 +35,7 @@
        ((= p 0) (message "No points."))
        ((= p 1) (message "1 point."))
        (t (message "%s points." p))))))
+
+(global-set-key (kbd "C-c f") 'insert-beamer-frame)
+(global-set-key (kbd "C-c i") 'number-of-items)
+(global-set-key (kbd "C-c p") 'total-points)
