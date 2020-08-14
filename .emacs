@@ -7,6 +7,7 @@
 (tool-bar-mode 0)
 (global-linum-mode 1)
 (transient-mark-mode t)
+(toggle-frame-maximized)
 
 (custom-set-variables
  '(fill-column 110)
@@ -15,7 +16,7 @@
 
 ;;; Set path, frequently-visited directory
 (setq load-path (cons "~/" load-path))
-(setq default-directory "C:/users/jbusch/courses/2019-2020/")
+(setq default-directory "C:/Users/jbusch/OneDrive - Westridge School For Girls/courses/2020-2021/")
 
 ;;; Install LaTeX editing functions
 (load "latex-helpers")
