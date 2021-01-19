@@ -1,7 +1,7 @@
 (setq lexical-binding t)
 
 (defun insert-beamer-frame (&optional align-top)
-  "Creates a new frame in a LaTex beamer file"
+  "Create a new frame in a LaTex beamer file"
   (interactive "P")
   (unless align-top
     (message "Add any prefix argument to align top."))
@@ -18,7 +18,7 @@
 
 
 (defun number-of-items ()
-  "Calculates the total number of \\item's in a document."
+  "Calculate the total number of \\item's in a document."
   (interactive)
   (defun count-items (acc)
     (if (re-search-forward "\\\\item" nil t)
@@ -36,7 +36,7 @@
 
 
 (defun total-points ()
-  "Calculates the total number of points in an assessment."
+  "Calculate the total number of points in an assessment."
   (interactive)
   (defun count-points (acc)
     (if (re-search-forward "\\([[:digit:]]+\\) points*)" nil t)
